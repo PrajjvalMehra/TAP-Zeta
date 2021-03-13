@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Text, Button , StyleSheet,Image,Animated} from 'react-native';
+import { View, Text, Button , StyleSheet,Image,Animated, TouchableOpacity} from 'react-native';
 import Onboarding from 'react-native-onboarding-swiper';
-import Emoji from 'react-native-emoji';
+import FadeInView from 'react-native-fade-in-view';
 
+import { LinearGradient } from 'expo-linear-gradient';
 
 const Dots = ({selected}) =>{
   let backgroundColor;
@@ -27,7 +28,7 @@ const Dots = ({selected}) =>{
 const SkipButton = ({...props})=>(
 
   <View style={{marginHorizontal:20}}>
-  <Button title = 'SKIP' color ="#70E4EF" {...props}/>
+  <Button title = 'SKIP' color ="#70E4EF" fontFamily="Poppins" {...props}/>
   </View>
     
   
@@ -35,7 +36,7 @@ const SkipButton = ({...props})=>(
 )
 const NextButton = ({...props})=>(
 <View style={{marginHorizontal:20}}>
-  <Button title = 'NEXT' color ="#70E4EF" {...props}/>
+  <Button title = 'NEXT' color ="#70E4EF" fontFamily="Poppins" {...props}/>
   </View>
     
   
@@ -44,12 +45,18 @@ const NextButton = ({...props})=>(
 const DoneButton = ()=>(
 
   
+<FadeInView
+    duration={500}
+    
+    
+  >
+  <TouchableOpacity style={{flex:1,flexDirection:"row",justifyContent:'center',alignItems:'center',width:380,right:"10%",borderRadius:'30'}}>
+    <LinearGradient colors={["#FF0A6C", "#2D27FF"]} start={[0,1]} end={[1,0]} style={{width:380,flex:1,justifyContent:'center',alignItems:'center',height:'100%',borderRadius:'30'}} >
+      <Text style={{color:"white",fontFamily:'PoppinsBold',fontSize:16}}>Get Started</Text>
+    </LinearGradient>
+  </TouchableOpacity>
+  </FadeInView>
   
-  <View style={{marginHorizontal:20}}>
-    
-      <Button title = 'Get Started' color ="#70E4EF"/>
-    
-  </View>
       
     
   
@@ -57,7 +64,7 @@ const DoneButton = ()=>(
   
 
 const OnboardingScreen = ({})=>{
-
+  
 
     return(
       <View style={styles.container}>
@@ -65,7 +72,8 @@ const OnboardingScreen = ({})=>{
         SkipButtonComponent={SkipButton}
         NextButtonComponent = {NextButton}
         DoneButtonComponent = {DoneButton}
-        showPagination
+        titleStyles={{fontFamily:'Poppins'}}
+        subTitleStyles={{fontFamily:'Poppins'}}
         DotComponent={Dots}
         
         pages={[

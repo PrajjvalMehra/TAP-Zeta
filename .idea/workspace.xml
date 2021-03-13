@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3d718e7-3452-4785-9fd7-9f67c6d54c8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Screens/LoginSignup.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/LoginSignup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +41,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="455" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615556366659" />
-    <state x="389" y="145" width="1200" height="800" key="AVDManager" timestamp="1615556725990">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="415" y="155" width="1280" height="856" key="AVDManager" timestamp="1615558668388">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="389" y="145" width="1200" height="800" key="AVDManager/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615556725990" />
+    <state x="415" y="155" width="1280" height="856" key="AVDManager/0.0.2048.1112@0.0.2048.1112" timestamp="1615558668388" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1615556468773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615556468773" />
+    <state x="681" y="259" key="run.anything.popup" timestamp="1615558449082">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="681" y="259" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1615558449082" />
   </component>
 </project>
